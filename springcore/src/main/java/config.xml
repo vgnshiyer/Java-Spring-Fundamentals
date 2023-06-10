@@ -4,15 +4,5 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-        <bean class="com.springcore.Student" name="student">
-            <property name="studentId">
-                <value>23221</value>
-            </property>
-            <property name="studentName">
-                <value>Vignesh Iyer</value>
-            </property>
-            <property name="studentAddress">
-                <value>Tempe</value>
-            </property>
-        </bean>
+        <bean class="com.springcore.Student" name="student" p:studentId="23124" p:studentName="Vignesh Iyer" p:studentAddress="Tempe" />
 </beans>
