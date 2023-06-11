@@ -8,5 +8,10 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/constructorInjection/ciconfig.xml");
         person p = (person) context.getBean("person");
         System.out.println(p);
+
+        Addition a = (Addition) context.getBean("add");
+        a.sum();
+        // by giving type attribute in bean in config.xml, it will call the particular constructor
+        // by default it will try to look for the string constructor, else starts checking from top to bottom in order
     }
 }
