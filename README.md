@@ -32,3 +32,7 @@ Every attribute in a class has a setter method. The IOC container will call the 
 2. Constructor injection
 The IOC container uses the constructor of the class to set attributes for the object.
 
+Spring provides two important methods to every bean
+
+1. public void init()
+2. public void destroy()
