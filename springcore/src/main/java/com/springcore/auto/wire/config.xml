@@ -8,5 +8,5 @@
         <!-- <bean class="com.springcore.lifecycle.Samosa" name="samosa" p:price="10" init-method="init" destroy-method="destroy" />
 		<bean class="com.springcore.lifecycle.Pepsi" name="pepsi" p:price="10" /> -->
 		<bean class="com.springcore.auto.wire.Address" name="address1" p:street="dorsey lane" p:city="tempe" />
-		<bean class="com.springcore.auto.wire.Employee" name="employee" autowire="byType" />
+		<bean class="com.springcore.auto.wire.Employee" name="employee" autowire="constructor" />
 </beans>

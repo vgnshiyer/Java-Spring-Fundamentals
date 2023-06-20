@@ -17,6 +17,7 @@ public class Employee {
 
     public Employee(Address address) {
         this.address = address;
+        System.out.println("Inside constructor");
     }
 
     @Override
