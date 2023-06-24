@@ -1,5 +1,7 @@
 package com.springcore.auto.wire;
 
+import org.springframework.beans.facory.annotation.Autowired
+
 public class Employee {
     private Address address;
 
@@ -7,6 +9,7 @@ public class Employee {
         return address;
     }
 
+    @Autowired
     public void setAddress(Address address) {
         this.address = address;
     }
