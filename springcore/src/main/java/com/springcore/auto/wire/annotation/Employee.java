@@ -1,8 +1,11 @@
 package com.springcore.auto.wire;
 
 import org.springframework.beans.facory.annotation.Autowired
+import org.springframework.beans.facory.annotation.Qualifier
 
 public class Employee {
+    @Autowired
+    @Qualifier("address1") // to distinguish between multiple beans of the same type
     private Address address;
 
     public Address getAddress() {
@@ -17,7 +20,6 @@ public class Employee {
         super();
     }
 
-    @Autowired
     public Employee(Address address) {
         this.address = address;
         System.out.println("Inside constructor");
