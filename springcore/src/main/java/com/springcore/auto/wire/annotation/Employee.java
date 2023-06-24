@@ -9,7 +9,6 @@ public class Employee {
         return address;
     }
 
-    @Autowired
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -18,6 +17,7 @@ public class Employee {
         super();
     }
 
+    @Autowired
     public Employee(Address address) {
         this.address = address;
         System.out.println("Inside constructor");
